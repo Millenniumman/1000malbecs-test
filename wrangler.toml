@@ -1,0 +1,16 @@
+name = "1000malbecs-test"
+main = "workers/index.js" 
+compatibility_date = "2025-06-01"
+compatibility_flags = ["nodejs_compat"]
+
+[functions]
+node_compat = true
+
+# Ignorar stripe temporalmente
+[build.upload]
+format = "modules"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "malbecs-reviews-test"
+database_id = "0cd3fbb4-9921-4024-b300-8df21a6805b5"
